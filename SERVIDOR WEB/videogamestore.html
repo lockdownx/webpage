@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Retro de Videojuegos</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #222; color: #fff; text-align: center; }
+        .container { width: 90%; margin: auto; }
+        .catalogo { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; }
+        .categoria { border: 2px solid #fff; padding: 10px; width: 100%; max-width: 300px; }
+        .juego { background: #444; padding: 10px; margin: 10px; }
+        button { background-color: #f04; color: white; padding: 10px; border: none; cursor: pointer; }
+        img { border-radius: 10px; max-width: 100%; height: auto; }
+        
+        @media (min-width: 768px) {
+            .catalogo { justify-content: space-around; }
+            .categoria { width: 30%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Zero videogames store</h1>
+    <div class="container">
+        <div class="catalogo">
+            <div class="categoria">
+                <h2>PSP</h2>
+                <div class="juego">
+                    <p>God of War: Chains of Olympus</p>
+                    <figure>
+                        <img src="godofwar.png" alt="God of War: Chains of Olympus">
+                    </figure>
+                    <button>Comprar</button>
+                </div>
+                <div class="juego">
+                    <p>Metal Gear Solid: Peace Walker</p>
+                    <figure>
+                        <img src="metalgear.jpeg" alt="Metal Gear Solid: Peace Walker">
+                    </figure>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h2>Nintendo DS</h2>
+                <div class="juego">
+                    <p>Pokémon HeartGold</p>
+                    <figure>
+                        <img src="pokemon.jpg" alt="Pokémon HeartGold">
+                    </figure>
+                    <button>Comprar</button>
+                </div>
+                <div class="juego">
+                    <p>The Legend of Zelda: Phantom Hourglass</p>
+                    <figure>
+                        <img src="zelda.jpg" alt="The Legend of Zelda: Phantom Hourglass">
+                    </figure>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h2>Xbox</h2>
+                <div class="juego">
+                    <p>Halo: Combat Evolved</p>
+                    <figure>
+                        <img src="halo.jpg" alt="Halo: Combat Evolved">
+                    </figure>
+                    <button>Comprar</button>
+                </div>
+                <div class="juego">
+                    <p>Fable</p>
+                    <figure>
+                        <img src="fable.jpeg" alt="Fable">
+                    </figure>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
